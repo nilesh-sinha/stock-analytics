@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-investment-analytics',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./investment-analytics.component.css']
 })
 export class InvestmentAnalyticsComponent implements OnInit {
-
+  @Input() tableData: any;
   constructor() { }
 
   ngOnInit() {
