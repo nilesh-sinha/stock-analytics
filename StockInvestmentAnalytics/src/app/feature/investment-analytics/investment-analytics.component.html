@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="col-sm-9">
-        <div class="row text-center">
+        <div *ngIf='tableData!=undefined' class="row text-center">
           <h5>{{tableData.name}}</h5>
         </div>
         <table class="table table-striped">
